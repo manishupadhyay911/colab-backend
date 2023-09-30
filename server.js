@@ -11,7 +11,7 @@ mongoose.connect("mongodb+srv://manish:12345@cluster0.rlzjbxz.mongodb.net/?retry
 
 const io = require("socket.io")(3001, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 })
